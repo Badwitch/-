@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int time[5],outset[5],direction[5],i,sum=0,add;
+	for(i=0;i<5;i++)
+		scanf("%d %d %d",&time[i],&outset[i],&direction[i]); //输入 
+	for(i=0;i<5;i++)
+	{
+		if(direction[i]==0)
+		{add=(outset[i]-1)+1+(10-outset[i])+time[i];//add指电梯到达目的地所需时间 
+		printf("%d时，停靠在10楼\n",add);}
+		else
+		{add=outset[i]+1+outset[i]+time[i];
+		printf("%d时，停靠在1楼\n",add);}
+		sum+=add;//sum指所有乘客等待时间总和 
+	} 
+	printf("%d",sum);
+	return 0;	 
+}
