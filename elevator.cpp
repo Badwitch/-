@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<math.h>
-struct request
+int main()
+{
+	struct request
 {
 	int a;
 	int b;
 	int c;
 }request[5],temp;//结构体数组request用于存入请求,变量temp用于后面排序交换。
-int main()
-{
- 	int i,t=1,s=0,sum=0;
+ 	int i,sum=0,s=0,t=1;
  	for(i=0;i<5;i++)
  	{
  		scanf("%d %d %d",&request[i].a,&request[i].b,&request[i].c);
