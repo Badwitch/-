@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<math.h>
-#include"elevator.cpp"
+#include"elevator.h"
 using namespace std;
 int main()
 {
